@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Remote Internships Boost Career Growth</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="blog-header">
+    <h1>How Remote Internships Boost Career Growth</h1>
+    <p class="meta">July 19, 2025 — by Ayesha Ahmed</p>
+    <img src="https://source.unsplash.com/featured/?office,remote" alt="Featured" class="featured-img" />
+  </header>
+
+  <main class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Remote internships allow students to gain practical experience without geographic limitations.</p>
+    <h2>Advantages of Remote Internships</h2>
+    <ul>
+      <li>Flexible schedules</li>
+      <li>Work from anywhere</li>
+      <li>Global exposure</li>
+    </ul>
+    <p>Aliquam erat volutpat. Morbi vehicula, nisl nec fermentum faucibus, libero massa tincidunt eros, vel pulvinar ante urna et leo.</p>
+    <blockquote>“Remote internships are the future of early career development.”</blockquote>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras at magna lorem.</p>
+    <h3>Tools You’ll Use</h3>
+    <p>Interns often work with tools like Zoom, Slack, and Trello to stay connected and productive across teams.</p>
+  </main>
+
+  <section class="social-share">
+    <p>Share this post:</p>
+    <div class="icons">
+      <button onclick="share('LinkedIn')" class="icon-btn">🔗 LinkedIn</button>
+      <button onclick="share('Twitter')" class="icon-btn">🐦 Twitter</button>
+      <button onclick="share('Facebook')" class="icon-btn">📘 Facebook</button>
+    </div>
+  </section>
+
+  <button class="scroll-top" onclick="scrollToTop()">⬆️</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+---
+
+✅ style.css
+
+/* Google Font */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.7;
+}
+
+.blog-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.featured-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+}
+
+.content h2, .content h3 {
+  margin-top: 2rem;
+  color: #2c3e50;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background: #eef;
+  border-left: 4px solid #3498db;
+  font-style: italic;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-share {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #ffffff;
+}
+
+.icon-btn {
+  margin: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.icon-btn:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 1.2rem;
+  }
+
+  .blog-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .scroll-top {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+
+---
+
+✅ script.js
+
+// Show scroll-to-top button when scrolled down
+window.onscroll = function () {
+  const btn = document.querySelector(".scroll-top");
+  if (document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top function
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Share button alert
+function share(platform) {
+  alert(`Post shared on s(platform)!');
